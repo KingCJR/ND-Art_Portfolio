@@ -1,0 +1,220 @@
+$font-primary: courgette
+$font-secondary: roboto
+$main-text: calibri
+$font-stack: Open Sans, san-serif
+
+$LightShade-Color: #E5E1EC
+$LightAccent-Color: #A58AC0
+$Primary-Color: #644999
+$DarkAccent-Color: #736ECD
+$DarkShade-Color: #201429
+
+@import nav
+@import footer
+
+body
+
+    
+.ND_index-banner:before
+    opacity: 0.2
+.ND_index-banner
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    background-blend-mode: color
+    background-color: rgba(238, 238, 238, 0.81) !important
+    background-image: url("../Img/background.jpg")
+    .banner-container
+        height: 100%
+        padding: 100px 0px
+        .container-text
+            padding: 2vw 0vw
+            h1
+                font: $font-stack
+                letter-spacing: 1.5px
+                text-align: center
+                font-family: $font-primary
+                font-weight: 600
+                text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+            h3
+                font-size: 20px
+                font: $font-stack
+                letter-spacing: 2px
+                text-align: center
+                text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+        .ND_profile
+            width: 275px
+            display: block
+            margin-left: auto
+            margin-right: auto
+            border-radius: 200px
+            -webkit-box-shadow: 0px 12px 12px 0px rgba(50, 50, 50, 0.7)
+            -moz-box-shadow:    0px 12px 12px 0px rgba(50, 50, 50, 0.7)
+            box-shadow:         0px 12px 12px 0px rgba(50, 50, 50, 0.7)
+        .banner-container-icons
+            padding: 20px 0px
+            text-align: center
+            .fa-icon   
+                font-size: 28px
+                padding: 15px
+                transition: transform .2s
+                color: $Primary-Color
+            .fa-icon:hover
+                transform: scale(1.5)
+                color: $LightAccent-Color
+        .banner-container-footer
+            padding: 20px 0px
+            text-align: center
+            .row
+                margin: 0
+                .container-footer
+                    padding: 10px
+                    #commission-link
+                        padding: 13px 26px
+                        color: $Primary-Color
+                        font-size: 11px
+                        font-weight: 700
+                        font: $font-secondary
+                        text-decoration: none
+                        border-radius: 300px
+                        letter-spacing: .2em
+                        text-transform: uppercase
+                        border: 2px solid $Primary-Color
+                        background-color: transparent
+                    #commission-link:hover
+                        color: $LightShade-Color
+                        transition: .25s
+                        background-color: rgba(50, 34, 122, 0.85)
+.ND_index-MainContent
+    padding: auto
+    margin: auto
+    background-color: $LightShade-Color
+    .index-intro
+        background-color: $DarkShade-Color
+        .intro-container
+            margin: 0px
+            .col-md-12
+                padding: 50px 20px
+                #intro-header
+                    color: #E4E2E2
+                    text-align: center
+                    font-family: $font-primary
+                    font-weight: 500
+                #intro-text
+                    color: #e4e2e2
+                    font-size: 1em
+                    font-weight: 700
+                    text-align: center
+                    font: $font-secondary
+    .index-gallery
+        padding: 75px 0px 100px 0px
+        background: $LightShade-Color
+        margin: auto
+        .container-gallery
+            margin: 0px
+            padding: 0px 0px
+            .gallery-title
+                text-align: center
+                padding: 75px 0px
+                #gallery-title-1
+                    font-size: 36px
+                    font-weight: 600px
+                    color: $Primary-Color
+                    text-transform: uppercase
+                    font-family: $font-primary
+            .grid-box
+                margin: auto
+                padding: 10px
+                
+                .grid-item-top 
+                    height: 200px
+                    border: 2px solid #000
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: center
+                    #top-title
+                        font-size: 20px
+                        font-weight: 600px
+                        color: $Primary-Color
+                        font-family: $font-primary
+                .grid-item-bottom
+                    padding: 20px
+                    box-shadow: 0 8px 6px -6px black;
+                    background-color: RGBA(165, 138, 192, 0.35)
+                    #item-bottom-title
+                        font-size: 18px
+                        font-weight: 400
+                        font-family: calibri
+                        letter-spacing: 1px
+                        text-transform: uppercase
+                        color: $Primary-Color
+                    #item-bottom-text 
+                        font-size: 16px
+                        font-weight: 400
+                        letter-spacing: .03em
+                        line-height: 1.25em
+                        text-transform: none
+                        font-family: calibri  
+                        color: $DarkShade-Color
+            .gallery-grid-footer
+                padding: 75px 0px
+                text-align: center
+                #Emote-link
+                    padding: 13px 26px
+                    color: $Primary-Color
+                    font-size: 11px
+                    font-weight: 700
+                    font: $font-secondary
+                    text-decoration: none
+                    border-radius: 300px
+                    letter-spacing: .2em
+                    text-transform: uppercase
+                    border: 2px solid $Primary-Color
+                    background-color: transparent
+                #Emote-link:hover  
+                    color: $LightShade-Color
+                    transition: .25s
+                    background-color: rgba(50, 34, 122, 0.85)  
+    .index-Twtich
+        background-color: $LightShade-Color
+        .twitch-container
+            padding: 20px
+            .twitch-container-row
+                .twitch-row-left
+                    padding: 17px
+                    #left-title
+                        font-size: 34px
+                        font-weight: 600px
+                        color: $Primary-Color
+                        font-family: $font-primary
+                    #left-text
+                        font-size: 16px
+                        font-weight: 400;
+                        font-style: normal;
+                        letter-spacing: .03em;
+                        line-height: 2em;
+                        text-transform: none;
+                        font-family: calibri
+                        margin-bottom: 40px
+                    #left-link
+                        padding: 13px 26px
+                        color: $Primary-Color
+                        font-size: 11px
+                        font-weight: 700
+                        font: $font-secondary
+                        text-decoration: none
+                        border-radius: 300px
+                        letter-spacing: .2em
+                        text-transform: uppercase
+                        border: 2px solid $Primary-Color
+                        background-color: transparent
+                    #left-link:hover
+                        color: $LightShade-Color
+                        transition: .25s
+                        background-color: rgba(50, 34, 122, 0.85)
+                .twitch-row-right
+                    padding: 20px
+                    #twitch-img
+                        width: 100%

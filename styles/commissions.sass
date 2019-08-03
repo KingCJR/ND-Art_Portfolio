@@ -1,0 +1,141 @@
+$font-primary: courgette
+$font-secondary: roboto
+$main-text: calibri
+$font-stack: Open Sans, san-serif
+
+$LightShade-Color: RGBA(229, 225, 236, 1)
+$LightAccent-Color: RGBA(165, 138, 192, 1)
+$Primary-Color: RGBA(100, 73, 153, 1)
+$DarkAccent-Color: RGBA(115, 110, 205, 1)
+$DarkShade-Color: RGBA(32, 20, 41, 1)
+
+$DarkShader: RGBA(42, 42, 42, 1)
+$black : RGBA(33, 33, 33, 1)
+
+@import nav
+@import footer
+
+body
+
+.ND_commissions-main
+    background-color: #fff
+    .commission-header
+        display: flex
+        width: 100%
+        flex-flow: column wrap
+        justify-content: center
+        align-items: center
+        #header-title
+            font-size: 10vw
+            font-weight: 700
+            color: $black
+            padding: 75px 0px 0px
+            text-transform: uppercase
+            font-family: $font-primary
+        #header-titlesmall
+            font-size: 4vw
+            font-weight: 500
+            color: $black
+            font-family: $main-text
+        #header-text
+            color: $black
+            font-size: 18px
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: .03em;
+            line-height: 1.5em;
+            text-transform: none;
+            font-family: calibri
+            margin-bottom: 40px
+            padding: 0px 20px
+
+    .commission-box
+        display: flex
+        justify-content: center
+        flex-flow: column wrap
+        padding: 100px 0px
+        margin: 0px
+        list-style: none
+
+        .commission-box-header
+            display: flex
+            flex-flow: column wrap
+            width: 100%
+            margin-bottom: -50px
+            padding: 5px 0px
+            background-color: $DarkShader
+            #box-header-title
+                color: $black
+                padding-top: 5px
+                text-align: center
+                font-size: 32px
+                font-weight: 600
+                letter-spacing: 3px
+                font-family: $font-primary
+                color: $LightShade-Color
+            #box-header-titlebottom
+                color: $black
+                text-align: center
+                font-size: 16px
+                letter-spacing: 0.5px
+                font: $font-secondary
+                color: $LightShade-Color
+        .commission-box-container
+            display: flex
+            flex-direction: row
+            justify-content: center
+            border-radius: 20px
+            padding: 100px 50px 10px
+            .commission-box-left
+                padding: 10px 0px 20px
+                text-align: left
+                #box-left-title
+                    color: $Primary-Color
+                    font-size: 20px !important
+                    font-weight: 700
+                    font-family: calibri
+                    letter-spacing: 1px
+                    padding: 0px 20px 5px 20px
+                    text-transform: uppercase
+                .box-left-list
+                    padding: 0px 20px 10px
+                    #box-left-desc
+                        color: $black
+                        font: $font-secondary
+                        font-size: 16px
+                        letter-spacing: 1px
+                        padding: 0px 0px
+                .box-left-link
+                    padding: 10px 20px
+                    #box-left-linkbutton
+                        margin-top: 20px 0px
+                        padding: 13px 26px
+                        color: $Primary-Color
+                        font-size: 11px
+                        font-weight: 700
+                        font: $font-secondary
+                        text-decoration: none
+                        border-radius: 300px
+                        letter-spacing: .2em
+                        text-transform: uppercase
+                        border: 2px solid $Primary-Color
+                        background-color: transparent
+                    #box-left-linkbutton:hover
+                        color: $LightShade-Color
+                        transition: .25s
+                        background-color: rgba(50, 34, 122, 0.85)
+            .commission-box-right
+                padding: 10px
+                min-height: 300px
+                display: flex
+                justify-content: center
+                flex-flow: column wrap
+                #box-right-img
+                    width: 250px
+                    align-self: center
+                #box-right-price
+                    padding-top: 10px
+                    font-size: 46px
+                    font-weight: 700
+                    align-self: center 
+                    text-transform: uppercase

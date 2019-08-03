@@ -1,0 +1,76 @@
+.navbar {
+  background-color: RGBA(32, 20, 41, 1);
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #E4E2E2;
+  font-size: 1.5em;
+  font-family: courgette;
+}
+
+.navbar .navbar-toggler {
+  font-size: 1.5em;
+  color: #E4E2E2;
+  position: absolute;
+  left: 50%;
+  top: 106%;
+  margin: -20px;
+  padding: 0px 15px 10px;
+  background-color: RGBA(32, 20, 41, 1);
+  border-radius: 0px 0px 25px 25px;
+}
+
+.navbar .navbar-nav {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.navbar .navbar-nav .nav-item {
+  color: #E4E2E2;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+  background: #303030;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #E4E2E2;
+  display: block;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.ND_footer {
+  margin: 0;
+  background-color: RGBA(32, 20, 41, 1);
+}
+
+.ND_footer .footer-col {
+  padding: 40px 0px;
+}
+
+.ND_footer .footer-col .col-center {
+  text-align: center;
+}
+
+.ND_footer .footer-col .col-center #footer-title-desc {
+  font-size: 24px;
+  font-weight: 400;
+  font: roboto;
+  color: RGBA(229, 225, 236, 1);
+}
+
+.ND_footer .footer-bottom {
+  margin: 0;
+  text-align: center;
+}
+
+.ND_footer .footer-bottom #footer-bottom-text {
+  margin: 0;
+  font-size: 12px;
+  padding: 10px;
+  color: RGBA(229, 225, 236, 1);
+  font: Open Sans, san-serif;
+}
+/*# sourceMappingURL=artbook.css.map */

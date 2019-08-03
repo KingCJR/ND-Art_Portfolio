@@ -1,0 +1,114 @@
+.navbar {
+  background-color: #201429;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #E4E2E2;
+  font-size: 1.5em;
+  font-family: courgette;
+}
+
+.navbar .navbar-toggler {
+  font-size: 1.5em;
+  color: #E4E2E2;
+  position: absolute;
+  left: 50%;
+  top: 106%;
+  margin: -20px;
+  padding: 0px 15px 10px;
+  background-color: #201429;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.navbar .navbar-nav {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.navbar .navbar-nav .nav-item {
+  color: #E4E2E2;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+  background: #303030;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #E4E2E2;
+  display: block;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.ND_footer {
+  margin: 0;
+  background-color: #201429;
+}
+
+.ND_footer .footer-col {
+  padding: 40px 0px;
+}
+
+.ND_footer .footer-col .col-center {
+  text-align: center;
+}
+
+.ND_footer .footer-col .col-center #footer-title-desc {
+  font-size: 24px;
+  font-weight: 400;
+  font: roboto;
+  color: #E5E1EC;
+}
+
+.ND_footer .footer-bottom {
+  margin: 0;
+  text-align: center;
+}
+
+.ND_footer .footer-bottom #footer-bottom-text {
+  margin: 0;
+  font-size: 12px;
+  padding: 10px;
+  color: #E5E1EC;
+  font: Open Sans, san-serif;
+}
+
+body {
+  margin: auto;
+}
+
+body .ND_about-main {
+  background: #E5E1EC;
+}
+
+body .ND_about-main .about-container {
+  padding: 100px 0px;
+}
+
+body .ND_about-main .about-container .about-row {
+  margin: 0px;
+  padding: 0px 20px;
+}
+
+body .ND_about-main .about-container .about-row .about-left #about-left-title {
+  font-size: 32px;
+  font-family: courgette;
+}
+
+body .ND_about-main .about-container .about-row .about-left .left-desc-box #desc-box-text-1 {
+  font-family: calibri;
+}
+
+body .ND_about-main .about-container .about-row .about-left .left-desc-box #desc-box-text-2 {
+  font-family: calibri;
+}
+
+body .ND_about-main .about-container .about-row .about-left #about-left-text {
+  font-family: calibri;
+}
+
+body .ND_about-main .about-container .about-row .about-right #about-right-img {
+  width: 100%;
+}
+/*# sourceMappingURL=about.css.map */
