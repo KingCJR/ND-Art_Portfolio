@@ -1,8 +1,10 @@
 .navbar
-    background-color: $DarkShade-Color
+    background-color: $DarkShader
     text-decoration: none
+    display: flex
     .navbar-brand
-        color:#E4E2E2
+        align-self: left
+        color: $Primary-Color
         font-size: 1.5em
         font-family: courgette 
     .navbar-toggler
@@ -13,20 +15,22 @@
         top: 106%
         margin: -20px
         padding: 0px 15px 10px
-        background-color: $DarkShade-Color
+        background-color: $DarkShader
         border-radius: 0px 0px 25px 25px
-        
     .navbar-nav
+        align-content: right
         list-style-type: none
         padding: 0px
-        
+        margin: 0px
         .nav-item
+            padding: 4px 6px
+            font-size: 18px
+            font-weight: 500
             color: #E4E2E2
-
-            
+            font-family: calibri
         .nav-item:hover
-            background: #303030
-            
+            border-radius: 25px
+            background-color: $Primary-Color
         .nav-link
             color: #E4E2E2
             display: block

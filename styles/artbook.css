@@ -1,10 +1,16 @@
 .navbar {
   background-color: RGBA(42, 42, 42, 1);
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar .navbar-brand {
-  color: #E4E2E2;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  color: #644999;
   font-size: 1.5em;
   font-family: courgette;
 }
@@ -17,22 +23,29 @@
   top: 106%;
   margin: -20px;
   padding: 0px 15px 10px;
-  background-color: RGBA(32, 20, 41, 1);
+  background-color: RGBA(42, 42, 42, 1);
   border-radius: 0px 0px 25px 25px;
 }
 
 .navbar .navbar-nav {
+  -ms-flex-line-pack: right;
+      align-content: right;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 
 .navbar .navbar-nav .nav-item {
+  padding: 4px 6px;
+  font-size: 18px;
+  font-weight: 500;
   color: #E4E2E2;
-  font-family: lato;
+  font-family: calibri;
 }
 
 .navbar .navbar-nav .nav-item:hover {
-  background-color: green;
+  border-radius: 25px;
+  background-color: #644999;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -44,7 +57,7 @@
 
 .ND_footer {
   margin: 0;
-  background-color: RGBA(32, 20, 41, 1);
+  background-color: #24172D;
 }
 
 .ND_footer .footer-col {
@@ -58,21 +71,22 @@
 .ND_footer .footer-col .col-center #footer-title-desc {
   font-size: 24px;
   font-weight: 400;
-  font: roboto;
-  color: RGBA(229, 225, 236, 1);
+  font-family: courgette;
+  color: #FFFFFF;
 }
 
 .ND_footer .footer-bottom {
   margin: 0;
   text-align: center;
+  background-color: #24172D;
 }
 
 .ND_footer .footer-bottom #footer-bottom-text {
   margin: 0;
   font-size: 12px;
   padding: 10px;
-  color: RGBA(229, 225, 236, 1);
-  font: Open Sans, san-serif;
+  color: #FFFFFF;
+  font: Open Sans;
 }
 
 h4, h6 {
@@ -91,8 +105,8 @@ h4, h6 {
 }
 
 .ND_ArtBook-main .Artbook_main-header #header-title {
-  color: RGBA(100, 73, 153, 1);
-  font-family: courgette;
+  color: #644999;
+  font-family: oswald;
   font-size: 42px;
   font-weight: 900;
   position: absolute;
@@ -120,14 +134,14 @@ h4, h6 {
 .ND_ArtBook-main .Artbook_First_Section .Section-header h4,
 .ND_ArtBook-main .Artbook_Second_Section .Section-header h4,
 .ND_ArtBook-main .Artbook_Third_Section .Section-header h4 {
-  font: roboto;
+  font: Open Sans;
   font-weight: 600;
 }
 
 .ND_ArtBook-main .Artbook_First_Section .Section-header h6,
 .ND_ArtBook-main .Artbook_Second_Section .Section-header h6,
 .ND_ArtBook-main .Artbook_Third_Section .Section-header h6 {
-  font: roboto;
+  font: Open Sans;
   font-weight: 400;
 }
 

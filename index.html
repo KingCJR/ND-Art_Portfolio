@@ -4,18 +4,59 @@
         <title>Home | Neko Dumpling - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./styles/style.css"/>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- ND header 1 -->
         <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-        
-
+        <!-- ND header 2 -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+        <!-- ND text 1 -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
+        <!-- ND text 2 -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <style>
-        
+            @media screen and (min-width: 1000px){
+                .ND_index-MainContent .index-gallery .gallery-title #gallery-title-1{
+                    font-size: 50px;            
+                }
+                .ND_index-MainContent .index-gallery .gallery-title #gallery-subtitle {
+                    font-size: 20px;
+                }
+                .ND_index-MainContent .index-Twitchchannel .Twitchchannel-header #Twitchchannel-title-1 {
+                    font-size: 50px;
+                }
+                .ND_index-MainContent .index-Twitchchannel .Twitchchannel-header #Twitchchannel-subtitle {
+                    font-size: 20px;
+                }   
+            }
+            @media screen and (min-width: 600px){
+                .ND_index-banner .banner-container .container-text h1 {
+                    font-size: 50px;
+                }
+                .ND_index-banner .banner-container .container-text h3 {
+                    font-size: 16px;
+                }
+                .ND_index-banner .banner-container .ND_profile {
+                    width: 15%;
+                }
+                .ND_index-MainContent .index-gallery .gallery-title #gallery-title-1::before{
+                    width: 900px;
+                }
+                .ND_index-MainContent .index-gallery .gallery-title #gallery-title-1::after{
+                    width: 900px;
+                }
+                .ND_index-MainContent .index-Twitchchannel .Twitchchannel-header #Twitchchannel-title-1::before{
+                    width: 900px;
+                }
+                .ND_index-MainContent .index-Twitchchannel .Twitchchannel-header #Twitchchannel-title-1::after{
+                    width: 900px;
+                }
+            }
         </style>
     </header>
 
@@ -48,10 +89,8 @@
                     <a class="fa-icon" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </div>
                 <footer class="banner-container-footer">
-                    <div class="row">
-                        <div class="container-footer col-md-12">
-                            <a id="commission-link" href="#">Commission Now</a> 
-                        </div>
+                    <div class="container-footer col-md-12">
+                        <a id="commission-link" href="#">Commission Now</a> 
                     </div>
                 </footer>
             </article>
@@ -68,77 +107,112 @@
                 </div>
             </section>
             <!--  Gallery Section -->
-            <section class="index-gallery container">
-                <aside class="container-gallery row">
-                    <header class="gallery-title container-fluid">
-                        <h3 id="gallery-title-1">Commissioned Work</h3>
-                    </header>  
+            <article class="index-gallery container">
+                <header class="gallery-title container">
+                    <h3 id="gallery-title-1">Art Work</h3>
+                    <h6 id="gallery-subtitle">Commission Items</h6>
+                    <p  id="gallery-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </header>  
+                <aside class="container-gallery row">                  
                     <figure class="grid-box col-md-4">
-                        <header class="grid-item-top" style="background-image:url('./Img/dumpling.webp')">
-                            <!--<h5 id="box-title">Emotes</h5>-->
+                        <header class="grid-item-top">
+                            <img class="top-img" src="http://placehold.it/400x400">
                         </header>
                         <footer class="grid-item-bottom">
                             <h3 id="item-bottom-title">
                                 <strong>Channel Design</strong>
-                                <br>Small Emotes • Sub Badges 
+                                <br><span style="font-size:14px;">Small Emotes • Sub Badges</span> 
                             </h3>
                             <p id="item-bottom-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </footer>
                     </figure>
+                    
                     <figure class="grid-box col-md-4">
-                        <header class="grid-item-top" style="background-image:url('./Img/ND_Banner.jpg')">
-                           <!--<h5 id="box-title">Emotes</h5>-->
+                        <header class="grid-item-top">
+                           <img class="top-img" src="http://placehold.it/400x400">
                         </header>
                         <footer class="grid-item-bottom">
                             <h3 id="item-bottom-title">
                                 <strong> Design Banners</strong>
-                                <br>Channel Designs • Branding 
+                                <br><span style="font-size:14px;">Channel Designs • Branding</span> 
                             </h3>
                             <p id="item-bottom-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </footer>            
                     </figure>
+
                     <figure class="grid-box col-md-4">
-                        <header class="grid-item-top" style="background-image:url('./Img/Neko-sketch.jpg')">
-                            <!--<h5 id="box-title">Emotes</h5>-->
+                        <header class="grid-item-top">
+                            <img class="top-img" src="http://placehold.it/400x400">
                         </header>
                         <footer class="grid-item-bottom">
                             <h3 id="item-bottom-title">
                                 <strong>Digitial illustration</strong>
-                                <br>Fanart • Personnal Request 
+                                <br><span style="font-size:14px;">Fanart • Personnal Request</span> 
                             </h3>
                             <p id="item-bottom-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </footer>
                     </figure>
+
                     <footer class="gallery-grid-footer container">
-                        <a id="Emote-link" href="#">View More</a>
+                        <a id="Emote-link" href="./commissions.html">View More</a>
                     </footer>
+
                 </aside>
-            </section>
+            </article>
+            <!-- Break Section -->
+            <article class="index-platform">
+                <section class="platform-container container">
+                    <header class="platform-container-header">
+                        <h2 id="platform-header-title">Show off your Brand!</h2>
+                        <h6 id="platform-header-titletext">Make your content the best it can be through art!</h6>
+                    </header>
+                </section>
+            </article>
             <!-- Twitch Section -->
-            <section class="index-Twtich">
+            <article class="index-Twitchchannel container">
+                <header class="Twitchchannel-header container">
+                    <h3 id="Twitchchannel-title-1">My Twitch</h3>
+                    <h6 id="Twitchchannel-subtitle">Check it out!</h6>
+                    <p  id="Twitchchannel-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </header>
                 <section class="twitch-container container">
-                    <div class="twitch-container-row row">
-                        <aside class="twitch-row-left col-md-6">
-                            <i class="fas fa-gamepad"></i>
-                            <h3 id="left-title">Check the Stream</h3>
-                            <p id="left-text">"Every week the Artist streams their digital projects & illustration artwork on Twitch.tv. Get to know them a little better by checking out the Stream, while also enjoying some sweet music and the hypnotizing process of creation. It can be quite mesmerizing to see a project from start to finish, all without the creator of said project feeling their personal space being invaded. (Keep in mind 18+ content)."</p>
-                            <a id="left-link" href="https://www.twitch.tv/nekodumpling">Learn More</a>
+                    <!-- Twitch Container Top Row -->
+                    <div class="twitch-container-top row">
+                        <aside class="twitch-row-text col-md-6">
+                            <h3 id="text-title">Check the Stream</h3>
+                            <p id="text-content">"Every week the Artist streams their digital projects & illustration artwork on Twitch.tv. Get to know them a little better by checking out the Stream, while also enjoying some sweet music and the hypnotizing process of creation. It can be quite mesmerizing to see a project from start to finish, all without the creator of said project feeling their personal space being invaded. (Keep in mind 18+ content)."</p>
+                            <a id="text-link" href="https://www.twitch.tv/nekodumpling">Learn More</a>
                         </aside>
-                        <aside class="twitch-row-right col-md-6">
+                        <aside class="twitch-row-img col-md-6">
                             <figure class="twitch-grid-right">
-                                <img id="twitch-img" src="./Img/Neko-sketch.jpg">
+                                <img id="twitch-img" src="http://placehold.it/800x800">
                             </figure>
                         </aside>
                     </div>
+                    <!-- Twitch Container Bottom Row -->
+                    <div class="twitch-container-bottom row">
+                        <aside class="twitch-row-img col-md-6">
+                            <figure class="twitch-grid-right">
+                                <img id="twitch-img" src="http://placehold.it/800x800">
+                            </figure>
+                        </aside>
+                        <aside class="twitch-row-text col-md-6">
+                            <h3 id="text-title">Subscribe Now!</h3>
+                            <p id="text-content">"Every week the Artist streams their digital projects & illustration artwork on Twitch.tv. Get to know them a little better by checking out the Stream, while also enjoying some sweet music and the hypnotizing process of creation. It can be quite mesmerizing to see a project from start to finish, all without the creator of said project feeling their personal space being invaded. (Keep in mind 18+ content)."</p>
+                            <a id="text-link" href="https://www.twitch.tv/nekodumpling">Learn More</a>
+                        </aside>
+                    </div>
                 </section>
-            </section>
+            </article>
+
         </main>
+
         <footer class="ND_footer container-fluid">
             <section class="footer-col col-12">
                 <figure class="col-center">

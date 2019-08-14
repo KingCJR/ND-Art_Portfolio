@@ -4,17 +4,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./styles/about.css"/>
         <link rel="stylesheet" href="./styles/_nav.sass"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- ND header 1 -->
         <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-        
-
+        <!-- ND header 2 -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+        <!-- ND text 1 -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
+        <!-- ND text 2 -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <style>
-            
+            @media screen and (min-width: 1000px){
+                .ND_about-main .about-container .about-header #Header-title {
+                    font-size: 50px;            
+                }
+                .ND_about-main .about-container .about-header #Header-subtitle {
+                    font-size: 20px;
+                }
+            }
+            @media screen and (min-width: 600px){
+                .ND_about-main .about-container .about-header #Header-title::before {
+                    width: 900px;            
+                }
+                .ND_about-main .about-container .about-header #Header-title::after {
+                    width: 900px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -34,20 +55,28 @@
                 </div>
             </nav>
         </header>
+
         <main class="ND_about-main">
             <article class="about-container container">
+                <header class="about-header container">
+                    <h3 id="Header-title">About me</h3>
+                    <h6 id="Header-subtitle">Commission Items</h6>
+                    <p  id="Header-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </header>  
                 <section class="about-row row">
                     <div class="about-left col-md-6">
-                        <h3 id="about-left-title">About Neko</h3>
                         <div class="left-desc-box">
-                            <strong id="desc-box-title-1">What I do</strong>
-                            <p id="desc-box-text-1">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                            <strong id="desc-box-title-2">My Story</strong>
-                            <p id="desc-box-text-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            <h2 id="desc-box-title">What I do</h2>
+                            <p id="desc-box-text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.<br><br> Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            <h2 id="desc-box-title">My Story</h2>
+                            <p id="desc-box-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br><br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. <br><br>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            <h2 id="desc-box-title">Twitch Life</h2>
+                            <p id="desc-box-text">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. <br><br>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                         </div>
                     </div>
                     <figure class="about-right col-md-6 order-first">
-                        <img id="about-right-img" src="./Img/Neko-sketch.jpg" alt="Neko Dumpling Profile Image">
+                        <img id="about-right-img" src="http://placehold.it/400x400" alt="Neko Dumpling Profile Image">
+                        <img id="about-right-img" src="http://placehold.it/400x400" alt="Neko Dumpling image 2">
                     </figure>
                 </section>
             </article>
@@ -64,6 +93,5 @@
                 <p id="footer-bottom-text">Copyright © 2023 Edgy Dumpling / Created by Cristian Rivera</p>
             </div>
         </footer>
-        
     </body>
 </html>

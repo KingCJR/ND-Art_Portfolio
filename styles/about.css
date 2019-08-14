@@ -1,10 +1,16 @@
 .navbar {
-  background-color: #201429;
+  background-color: RGBA(42, 42, 42, 1);
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar .navbar-brand {
-  color: #E4E2E2;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  color: #644999;
   font-size: 1.5em;
   font-family: courgette;
 }
@@ -17,21 +23,29 @@
   top: 106%;
   margin: -20px;
   padding: 0px 15px 10px;
-  background-color: #201429;
+  background-color: RGBA(42, 42, 42, 1);
   border-radius: 0px 0px 25px 25px;
 }
 
 .navbar .navbar-nav {
+  -ms-flex-line-pack: right;
+      align-content: right;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 
 .navbar .navbar-nav .nav-item {
+  padding: 4px 6px;
+  font-size: 18px;
+  font-weight: 500;
   color: #E4E2E2;
+  font-family: calibri;
 }
 
 .navbar .navbar-nav .nav-item:hover {
-  background: #303030;
+  border-radius: 25px;
+  background-color: #644999;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -43,7 +57,7 @@
 
 .ND_footer {
   margin: 0;
-  background-color: #201429;
+  background-color: #24172D;
 }
 
 .ND_footer .footer-col {
@@ -57,58 +71,104 @@
 .ND_footer .footer-col .col-center #footer-title-desc {
   font-size: 24px;
   font-weight: 400;
-  font: roboto;
-  color: #E5E1EC;
+  font-family: courgette;
+  color: #FFFFFF;
 }
 
 .ND_footer .footer-bottom {
   margin: 0;
   text-align: center;
+  background-color: #24172D;
 }
 
 .ND_footer .footer-bottom #footer-bottom-text {
   margin: 0;
   font-size: 12px;
   padding: 10px;
-  color: #E5E1EC;
-  font: Open Sans, san-serif;
+  color: #FFFFFF;
+  font: Open Sans;
 }
 
-body {
+.ND_about-main .about-container {
+  padding: 75px 20px 50px;
+  background: #fff;
   margin: auto;
+  overflow: hidden;
 }
 
-body .ND_about-main {
-  background: #E5E1EC;
+.ND_about-main .about-container .about-header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-body .ND_about-main .about-container {
-  padding: 100px 0px;
-}
-
-body .ND_about-main .about-container .about-row {
+.ND_about-main .about-container .about-header #Header-title {
   margin: 0px;
-  padding: 0px 20px;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  font-weight: 400;
+  color: #644999;
+  text-transform: uppercase;
+  font-family: oswald;
 }
 
-body .ND_about-main .about-container .about-row .about-left #about-left-title {
+.ND_about-main .about-container .about-header #Header-title::after {
+  left: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.ND_about-main .about-container .about-header #Header-title::before, .ND_about-main .about-container .about-header #Header-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 4px solid #644999;
+  border-bottom: 4px solid #736ECD;
+  height: 10px;
+  top: 50%;
+  margin-top: -3px;
+}
+
+.ND_about-main .about-container .about-header #Header-title::before {
+  right: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.ND_about-main .about-container .about-header #Header-subtitle {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #8F96CF;
+  text-transform: uppercase;
+  font-family: oswald;
+}
+
+.ND_about-main .about-container .about-header #Header-content {
+  font-size: 16px;
+  font-weight: 500;
+  font: raleway;
+  color: RGBA(42, 42, 42, 1);
+}
+
+.ND_about-main .about-container .about-row {
+  margin: 0px;
+  padding: 40px 20px;
+}
+
+.ND_about-main .about-container .about-row .about-left .left-desc-box #desc-box-title {
   font-size: 32px;
-  font-family: courgette;
+  letter-spacing: .5px;
+  color: #736ECD;
 }
 
-body .ND_about-main .about-container .about-row .about-left .left-desc-box #desc-box-text-1 {
-  font-family: calibri;
+.ND_about-main .about-container .about-row .about-left .left-desc-box #desc-box-text {
+  color: #2d2d2d;
+  font-family: Open Sans;
 }
 
-body .ND_about-main .about-container .about-row .about-left .left-desc-box #desc-box-text-2 {
-  font-family: calibri;
-}
-
-body .ND_about-main .about-container .about-row .about-left #about-left-text {
-  font-family: calibri;
-}
-
-body .ND_about-main .about-container .about-row .about-right #about-right-img {
+.ND_about-main .about-container .about-row .about-right #about-right-img {
+  padding: 10px;
   width: 100%;
 }
 /*# sourceMappingURL=about.css.map */

@@ -1,20 +1,22 @@
-$font-primary: courgette
-$font-secondary: roboto
-$main-text: calibri
-$font-stack: Open Sans, san-serif
+$Font-Header-1: courgette
+$Font-Header-2: oswald
+$Font-text-1: raleway   
+$Font-text-2: Open Sans
 
-$LightShade-Color: #E5E1EC
-$LightAccent-Color: #A58AC0
+$LightShade-Color: #FFFFFF
+$LightAccent-Color: #8F96CF
 $Primary-Color: #644999
-$DarkAccent-Color: #736ECD
-$DarkShade-Color: #201429
+$DarkAccent-Color: #736ECD 
+$DarkShade-Color: #24172D
+
+$DarkShader: RGBA(42, 42, 42, 1)
+$black : #2d2d2d
 
 @import nav
 @import footer
 
 body
 
-    
 .ND_index-banner:before
     opacity: 0.2
 .ND_index-banner
@@ -28,24 +30,24 @@ body
     background-image: url("../Img/background.jpg")
     .banner-container
         height: 100%
-        padding: 100px 0px
+        padding-top: 40px 
         .container-text
             padding: 2vw 0vw
             h1
-                font: $font-stack
+                font-size: 15vw
                 letter-spacing: 1.5px
                 text-align: center
-                font-family: $font-primary
+                font-family: $Font-Header-1
                 font-weight: 600
                 text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
             h3
-                font-size: 20px
-                font: $font-stack
+                font-size: 4vw
+                font: $Font-text-2
                 letter-spacing: 2px
                 text-align: center
                 text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
         .ND_profile
-            width: 275px
+            width: 200px
             display: block
             margin-left: auto
             margin-right: auto
@@ -57,7 +59,7 @@ body
             padding: 20px 0px
             text-align: center
             .fa-icon   
-                font-size: 28px
+                font-size: 25px
                 padding: 15px
                 transition: transform .2s
                 color: $Primary-Color
@@ -67,30 +69,29 @@ body
         .banner-container-footer
             padding: 20px 0px
             text-align: center
-            .row
-                margin: 0
-                .container-footer
-                    padding: 10px
-                    #commission-link
-                        padding: 13px 26px
-                        color: $Primary-Color
-                        font-size: 11px
-                        font-weight: 700
-                        font: $font-secondary
-                        text-decoration: none
-                        border-radius: 300px
-                        letter-spacing: .2em
-                        text-transform: uppercase
-                        border: 2px solid $Primary-Color
-                        background-color: transparent
-                    #commission-link:hover
-                        color: $LightShade-Color
-                        transition: .25s
-                        background-color: rgba(50, 34, 122, 0.85)
+            .container-footer
+                padding: 10px
+                #commission-link
+                    padding: 13px 26px
+                    color: $Primary-Color
+                    font-size: 11px
+                    font-weight: 700
+                    font: $Font-text-2
+                    text-decoration: none
+                    border-radius: 300px
+                    letter-spacing: .2em
+                    text-transform: uppercase
+                    border: 2px solid $Primary-Color
+                    background-color: transparent
+                #commission-link:hover
+                    color: $LightShade-Color
+                    transition: .25s
+                    background-color: rgba(50, 34, 122, 0.85)
+
 .ND_index-MainContent
     padding: auto
     margin: auto
-    background-color: $LightShade-Color
+    background-color: #fff
     .index-intro
         background-color: $DarkShade-Color
         .intro-container
@@ -100,49 +101,87 @@ body
                 #intro-header
                     color: #E4E2E2
                     text-align: center
-                    font-family: $font-primary
+                    font-family: $Font-Header-1
                     font-weight: 500
                 #intro-text
-                    color: #e4e2e2
+                    color: #E4E2E2
                     font-size: 1em
                     font-weight: 700
                     text-align: center
-                    font: $font-secondary
+                    font: $Font-text-2
     .index-gallery
-        padding: 75px 0px 100px 0px
-        background: $LightShade-Color
+        padding: 75px 20px 50px 
+        background: #fff
         margin: auto
+        overflow: hidden
+        .gallery-title
+            text-align: center
+            margin-bottom: 30px
+            #gallery-title-1
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $Primary-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #gallery-title-1::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #gallery-title-1::before, #gallery-title-1::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $Primary-Color
+                border-bottom: 3px solid $DarkAccent-Color
+                height: 12px
+                top: 50%
+                margin-top: -3px
+            #gallery-title-1::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #gallery-subtitle
+                margin-bottom: 20px
+                font-size: 14px
+                letter-spacing: 1.5px
+                color: $LightAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #gallery-content
+                font-size: 16px
+                font-weight: 600
+                font: $Font-text-2
+                color: $black
         .container-gallery
             margin: 0px
-            padding: 0px 0px
-            .gallery-title
-                text-align: center
-                padding: 75px 0px
-                #gallery-title-1
-                    font-size: 36px
-                    font-weight: 600px
-                    color: $Primary-Color
-                    text-transform: uppercase
-                    font-family: $font-primary
+            padding: 50px 0px
             .grid-box
                 margin: auto
                 padding: 10px
-                
                 .grid-item-top 
                     height: 200px
                     border: 2px solid #000
                     background-repeat: no-repeat
                     background-size: contain
                     background-position: center
-                    #top-title
-                        font-size: 20px
-                        font-weight: 600px
-                        color: $Primary-Color
-                        font-family: $font-primary
+                    position: relative
+                    overflow: hidden
+                    .top-img
+                        width: 100%
+                        height: 100%
+                        overflow: hidden
+                        transition: all 0.3s
+                    .top-img:hover
+                        transform: scale(1.5) 
                 .grid-item-bottom
-                    padding: 20px
-                    box-shadow: 0 8px 6px -6px black;
-                    background-color: RGBA(165, 138, 192, 0.35)
+                    padding: 20px 20px 
+                    border-radius: 0px 0px 25px 25px
+                    box-shadow: 0 8px 6px -6px black
+                    background-color: #f1f1f1
                     #item-bottom-title
                         font-size: 18px
                         font-weight: 400
@@ -151,13 +190,13 @@ body
                         text-transform: uppercase
                         color: $Primary-Color
                     #item-bottom-text 
-                        font-size: 16px
+                        font-size: 14px
                         font-weight: 400
                         letter-spacing: .03em
                         line-height: 1.25em
                         text-transform: none
-                        font-family: calibri  
-                        color: $DarkShade-Color
+                        font-family: $Font-text-2  
+                        color: $black
             .gallery-grid-footer
                 padding: 75px 0px
                 text-align: center
@@ -166,7 +205,7 @@ body
                     color: $Primary-Color
                     font-size: 11px
                     font-weight: 700
-                    font: $font-secondary
+                    font: $Font-text-2
                     text-decoration: none
                     border-radius: 300px
                     letter-spacing: .2em
@@ -177,44 +216,113 @@ body
                     color: $LightShade-Color
                     transition: .25s
                     background-color: rgba(50, 34, 122, 0.85)  
-    .index-Twtich
-        background-color: $LightShade-Color
+    .index-platform
+        padding: 30px 0px
+        background-image: linear-gradient(45deg, rgb(111, 71, 237) 0%, rgb(111, 71, 237) 21%,rgb(101, 92, 233) 21%, rgb(101, 92, 233) 30%,rgb(91, 112, 229) 30%, rgb(91, 112, 229) 35%,rgb(82, 133, 226) 35%, rgb(82, 133, 226) 51%,rgb(72, 154, 222) 51%, rgb(72, 154, 222) 72%,rgb(62, 174, 218) 72%, rgb(62, 174, 218) 81%,rgb(52, 195, 214) 81%, rgb(52, 195, 214) 100%)
+        .platform-container
+            .platform-container-header
+                text-align: center
+                #platform-header-title 
+                    font-family: $Font-Header-2
+                    color: $LightShade-Color
+                    letter-spacing: 2px
+                #platform-header-titletext
+                    font-family: $Font-text-2
+                    color: $LightShade-Color
+                    letter-spacing: 1px
+            .platform-container-row
+                .platform-img
+                    height: 200px
+                    .platform-img-icon
+                        width: 100%
+    .index-Twitchchannel
+        padding: 75px 20px 50px 
+        background: #fff
+        margin: auto
+        overflow: hidden
+        .Twitchchannel-header
+            text-align: center
+            margin-bottom: 30px
+            #Twitchchannel-title-1
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $Primary-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Twitchchannel-title-1::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #Twitchchannel-title-1::before, #Twitchchannel-title-1::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $Primary-Color
+                border-bottom: 3px solid $DarkAccent-Color
+                height: 12px
+                top: 50%
+                margin-top: -3px
+            #Twitchchannel-title-1::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #Twitchchannel-subtitle
+                font-size: 14px
+                letter-spacing: 1.5px
+                color: $LightAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Twitchchannel-content
+                font-size: 16px
+                font-weight: 500
+                font: $Font-text-2
+                color: $black
         .twitch-container
             padding: 20px
-            .twitch-container-row
-                .twitch-row-left
-                    padding: 17px
-                    #left-title
+            .twitch-container-top, .twitch-container-bottom
+                padding: 0px
+                .twitch-row-text
+                    padding: 25px 20px
+                    #text-title
+                        margin: 0px
                         font-size: 34px
                         font-weight: 600px
+                        text-align: center
                         color: $Primary-Color
-                        font-family: $font-primary
-                    #left-text
+                        font-family: $Font-Header-2
+                        display: inline-block
+                        position: relative
+                    #text-content
+                        color: $black
                         font-size: 16px
-                        font-weight: 400;
-                        font-style: normal;
-                        letter-spacing: .03em;
-                        line-height: 2em;
-                        text-transform: none;
+                        font-weight: 400
+                        font-style: normal
+                        letter-spacing: .03em
+                        line-height: 2em
+                        text-transform: none
                         font-family: calibri
                         margin-bottom: 40px
-                    #left-link
+                    #text-link
                         padding: 13px 26px
                         color: $Primary-Color
                         font-size: 11px
                         font-weight: 700
-                        font: $font-secondary
+                        font: $Font-text-2
                         text-decoration: none
                         border-radius: 300px
                         letter-spacing: .2em
                         text-transform: uppercase
                         border: 2px solid $Primary-Color
                         background-color: transparent
-                    #left-link:hover
+                    #text-link:hover
                         color: $LightShade-Color
                         transition: .25s
                         background-color: rgba(50, 34, 122, 0.85)
-                .twitch-row-right
+                .twitch-row-img
                     padding: 20px
                     #twitch-img
                         width: 100%

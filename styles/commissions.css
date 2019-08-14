@@ -1,10 +1,16 @@
 .navbar {
-  background-color: RGBA(32, 20, 41, 1);
+  background-color: RGBA(42, 42, 42, 1);
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar .navbar-brand {
-  color: #E4E2E2;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  color: #644999;
   font-size: 1.5em;
   font-family: courgette;
 }
@@ -17,21 +23,29 @@
   top: 106%;
   margin: -20px;
   padding: 0px 15px 10px;
-  background-color: RGBA(32, 20, 41, 1);
+  background-color: RGBA(42, 42, 42, 1);
   border-radius: 0px 0px 25px 25px;
 }
 
 .navbar .navbar-nav {
+  -ms-flex-line-pack: right;
+      align-content: right;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 
 .navbar .navbar-nav .nav-item {
+  padding: 4px 6px;
+  font-size: 18px;
+  font-weight: 500;
   color: #E4E2E2;
+  font-family: calibri;
 }
 
 .navbar .navbar-nav .nav-item:hover {
-  background: #303030;
+  border-radius: 25px;
+  background-color: #644999;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -43,7 +57,7 @@
 
 .ND_footer {
   margin: 0;
-  background-color: RGBA(32, 20, 41, 1);
+  background-color: #24172D;
 }
 
 .ND_footer .footer-col {
@@ -57,31 +71,55 @@
 .ND_footer .footer-col .col-center #footer-title-desc {
   font-size: 24px;
   font-weight: 400;
-  font: roboto;
-  color: RGBA(229, 225, 236, 1);
+  font-family: courgette;
+  color: #FFFFFF;
 }
 
 .ND_footer .footer-bottom {
   margin: 0;
   text-align: center;
+  background-color: #24172D;
 }
 
 .ND_footer .footer-bottom #footer-bottom-text {
   margin: 0;
   font-size: 12px;
   padding: 10px;
-  color: RGBA(229, 225, 236, 1);
-  font: Open Sans, san-serif;
+  color: #FFFFFF;
+  font: Open Sans;
 }
 
-.ND_commissions-main {
+.ND_index-banner:before {
+  opacity: 0.2;
+}
+
+.ND_index-banner {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  background-color: rgba(238, 238, 238, 0.81) !important;
+  background-image: url("../Img/background.jpg");
+}
+
+.ND_index-banner .banner-container {
+  overflow: hidden;
+}
+
+.ND_index-banner .banner-container .commission-banner {
+  -webkit-transform: translate(100px, 30%);
+          transform: translate(100px, 30%);
+  width: 200px;
+  height: auto;
+}
+
+.ND_commission-main {
   background-color: #fff;
 }
 
-.ND_commissions-main .commission-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.ND_commission-main .commission-intro {
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -93,88 +131,130 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0px 50px;
+  overflow: hidden;
 }
 
-.ND_commissions-main .commission-header #header-title {
-  font-size: 10vw;
-  font-weight: 700;
-  color: RGBA(33, 33, 33, 1);
-  padding: 75px 0px 0px;
-  text-transform: uppercase;
-  font-family: courgette;
+.ND_commission-main .commission-intro .commission-header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.ND_commissions-main .commission-header #header-titlesmall {
-  font-size: 4vw;
-  font-weight: 500;
-  color: RGBA(33, 33, 33, 1);
-  font-family: calibri;
-}
-
-.ND_commissions-main .commission-header #header-text {
-  color: RGBA(33, 33, 33, 1);
-  font-size: 18px;
+.ND_commission-main .commission-intro .commission-header #Header-title {
+  margin: 0px;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: .03em;
-  line-height: 1.5em;
-  text-transform: none;
-  font-family: calibri;
-  margin-bottom: 40px;
-  padding: 0px 20px;
+  color: #644999;
+  text-transform: uppercase;
+  font-family: oswald;
 }
 
-.ND_commissions-main .commission-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.ND_commission-main .commission-intro .commission-header #Header-title::after {
+  left: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.ND_commission-main .commission-intro .commission-header #Header-title::before, .ND_commission-main .commission-intro .commission-header #Header-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 4px solid #644999;
+  border-bottom: 4px solid #736ECD;
+  height: 10px;
+  top: 50%;
+  margin-top: -3px;
+}
+
+.ND_commission-main .commission-intro .commission-header #Header-title::before {
+  right: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.ND_commission-main .commission-intro .commission-header #Header-subtitle {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #8F96CF;
+  text-transform: uppercase;
+  font-family: oswald;
+}
+
+.ND_commission-main .commission-intro .commission-header #Header-content {
+  font-size: 16px;
+  font-weight: 500;
+  font: raleway;
+  color: RGBA(42, 42, 42, 1);
+}
+
+.ND_commission-main .commission-box {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  padding: 100px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0px 0px;
+  overflow: hidden;
+}
+
+.ND_commission-main .commission-box .box-header {
+  padding: 0px;
+  text-align: center;
+}
+
+.ND_commission-main .commission-box .box-header #Box-Title {
   margin: 0px;
-  list-style: none;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  font-weight: 400;
+  color: #736ECD;
+  text-transform: uppercase;
+  font-family: oswald;
 }
 
-.ND_commissions-main .commission-box .commission-box-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+.ND_commission-main .commission-box .box-header #Box-Title::after {
+  left: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.ND_commission-main .commission-box .box-header #Box-Title::before, .ND_commission-main .commission-box .box-header #Box-Title::after {
+  position: absolute;
+  content: "";
+  display: block;
   width: 100%;
-  margin-bottom: -50px;
-  padding: 5px 0px;
-  background-color: RGBA(42, 42, 42, 1);
+  border-top: 4px solid #736ECD;
+  border-bottom: 4px solid #8F96CF;
+  height: 10px;
+  top: 50%;
+  margin-top: -3px;
 }
 
-.ND_commissions-main .commission-box .commission-box-header #box-header-title {
-  color: RGBA(33, 33, 33, 1);
-  padding-top: 5px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-family: courgette;
-  color: RGBA(229, 225, 236, 1);
+.ND_commission-main .commission-box .box-header #Box-Title::before {
+  right: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
 }
 
-.ND_commissions-main .commission-box .commission-box-header #box-header-titlebottom {
-  color: RGBA(33, 33, 33, 1);
-  text-align: center;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  font: roboto;
-  color: RGBA(229, 225, 236, 1);
+.ND_commission-main .commission-box .box-header #Box-subtitle {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #8F96CF;
+  text-transform: uppercase;
+  font-family: oswald;
 }
 
-.ND_commissions-main .commission-box .commission-box-container {
+.ND_commission-main .commission-box .commission-box-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,63 +266,62 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  padding: 100px 50px 10px;
+  padding: 0px 50px 10px;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left {
+.ND_commission-main .commission-box .commission-box-container .commission-box-left {
   padding: 10px 0px 20px;
   text-align: left;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left #box-left-title {
-  color: RGBA(100, 73, 153, 1);
+.ND_commission-main .commission-box .commission-box-container .commission-box-left #box-left-title {
+  color: #644999;
   font-size: 20px !important;
   font-weight: 700;
-  font-family: calibri;
+  font-family: courgette;
   letter-spacing: 1px;
   padding: 0px 20px 5px 20px;
-  text-transform: uppercase;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left .box-left-list {
+.ND_commission-main .commission-box .commission-box-container .commission-box-left .box-left-list {
   padding: 0px 20px 10px;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left .box-left-list #box-left-desc {
-  color: RGBA(33, 33, 33, 1);
-  font: roboto;
+.ND_commission-main .commission-box .commission-box-container .commission-box-left .box-left-list #box-left-desc {
+  color: #2d2d2d;
+  font: Open Sans;
   font-size: 16px;
   letter-spacing: 1px;
   padding: 0px 0px;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left .box-left-link {
+.ND_commission-main .commission-box .commission-box-container .commission-box-left .box-left-link {
   padding: 10px 20px;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left .box-left-link #box-left-linkbutton {
+.ND_commission-main .commission-box .commission-box-container .commission-box-left .box-left-link #box-left-linkbutton {
   margin-top: 20px 0px;
   padding: 13px 26px;
-  color: RGBA(100, 73, 153, 1);
+  color: #644999;
   font-size: 11px;
   font-weight: 700;
-  font: roboto;
+  font: Open Sans;
   text-decoration: none;
   border-radius: 300px;
   letter-spacing: .2em;
   text-transform: uppercase;
-  border: 2px solid RGBA(100, 73, 153, 1);
+  border: 2px solid #644999;
   background-color: transparent;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-left .box-left-link #box-left-linkbutton:hover {
-  color: RGBA(229, 225, 236, 1);
+.ND_commission-main .commission-box .commission-box-container .commission-box-left .box-left-link #box-left-linkbutton:hover {
+  color: #FFFFFF;
   -webkit-transition: .25s;
   transition: .25s;
   background-color: rgba(50, 34, 122, 0.85);
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-right {
+.ND_commission-main .commission-box .commission-box-container .commission-box-right {
   padding: 10px;
   min-height: 300px;
   display: -webkit-box;
@@ -257,14 +336,14 @@
           flex-flow: column wrap;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-right #box-right-img {
+.ND_commission-main .commission-box .commission-box-container .commission-box-right #box-right-img {
   width: 250px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.ND_commissions-main .commission-box .commission-box-container .commission-box-right #box-right-price {
+.ND_commission-main .commission-box .commission-box-container .commission-box-right #box-right-price {
   padding-top: 10px;
   font-size: 46px;
   font-weight: 700;
@@ -272,5 +351,93 @@
       -ms-grid-row-align: center;
       align-self: center;
   text-transform: uppercase;
+}
+
+.ND_commission-main .commission-inquiry {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px 50px;
+  overflow: hidden;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header {
+  padding: 0px;
+  text-align: center;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header #Header-title {
+  margin: 0px;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  font-weight: 400;
+  color: #644999;
+  text-transform: uppercase;
+  font-family: oswald;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header #Header-title::after {
+  left: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header #Header-title::before, .ND_commission-main .commission-inquiry .inquiry-Header #Header-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 4px solid #644999;
+  border-bottom: 4px solid #736ECD;
+  height: 10px;
+  top: 50%;
+  margin-top: -3px;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header #Header-title::before {
+  right: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header #Header-content {
+  font-size: 16px;
+  font-weight: 500;
+  font: raleway;
+  color: RGBA(42, 42, 42, 1);
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header .Header-link {
+  padding: 30px 0px;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header .Header-link #inquiry-link {
+  padding: 13px 26px;
+  color: #644999;
+  font-size: 11px;
+  font-weight: 700;
+  font: Open Sans;
+  text-decoration: none;
+  border-radius: 300px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  border: 2px solid #644999;
+  background-color: transparent;
+}
+
+.ND_commission-main .commission-inquiry .inquiry-Header .Header-link #inquiry-link:hover {
+  color: #FFFFFF;
+  -webkit-transition: .25s;
+  transition: .25s;
+  background-color: rgba(50, 34, 122, 0.85);
 }
 /*# sourceMappingURL=commissions.css.map */

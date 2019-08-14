@@ -1,41 +1,83 @@
-$font-primary: courgette
-$font-secondary: roboto
-$main-text: calibri
-$font-stack: Open Sans, san-serif
+$Font-Header-1: courgette
+$Font-Header-2: oswald
+$Font-text-1: raleway   
+$Font-text-2: Open Sans
 
-$LightShade-Color: #E5E1EC
-$LightAccent-Color: #A58AC0
+$LightShade-Color: #FFFFFF
+$LightAccent-Color: #8F96CF
 $Primary-Color: #644999
-$DarkAccent-Color: #736ECD
-$DarkShade-Color: #201429
+$DarkAccent-Color: #736ECD 
+$DarkShade-Color: #24172D
+
+$DarkShader: RGBA(42, 42, 42, 1)
+$black : #2d2d2d
 
 @import nav
 @import footer
 
 body
-    margin: auto
-    .ND_about-main
-        background: $LightShade-Color
-        .about-container
-            padding: 100px 0px
-            .about-row
-                margin: 0px
-                padding: 0px 20px
-                .about-left
 
-                    #about-left-title
+.ND_about-main        
+    .about-container
+        padding: 75px 20px 50px 
+        background: #fff
+        margin: auto
+        overflow: hidden
+        .about-header
+            text-align: center
+            margin-bottom: 30px
+            #Header-title
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $Primary-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Header-title::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #Header-title::before, #Header-title::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $Primary-Color
+                border-bottom: 4px solid $DarkAccent-Color
+                height: 10px
+                top: 50%
+                margin-top: -3px
+            #Header-title::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #Header-subtitle
+                font-size: 14px
+                letter-spacing: 1.5px
+                color: $LightAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Header-content
+                font-size: 16px
+                font-weight: 500
+                font: $Font-text-1
+                color: $DarkShader
+        .about-row
+            margin: 0px
+            padding: 40px 20px
+            .about-left
+                .left-desc-box
+                    #desc-box-title
                         font-size: 32px
-                        font-family: $font-primary
-                    .left-desc-box
-                        #desc-box-title-1
-                        #desc-box-text-1
-                            font-family: $main-text
-                        #desc-box-title-2
-                        #desc-box-text-2    
-                            font-family: $main-text
-                    #about-left-text
-                        font-family: calibri
-                .about-right        
-                    
-                    #about-right-img
-                        width: 100%
+                        letter-spacing: .5px
+                        color: $DarkAccent-Color
+                        
+                    #desc-box-text
+                        color: $black
+                        font-family: $Font-text-2
+            .about-right        
+                #about-right-img
+                    padding: 10px
+                    width: 100%

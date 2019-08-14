@@ -1,91 +1,140 @@
-$font-primary: courgette
-$font-secondary: roboto
-$main-text: calibri
-$font-stack: Open Sans, san-serif
+$Font-Header-1: courgette
+$Font-Header-2: oswald
+$Font-text-1: raleway   
+$Font-text-2: Open Sans
 
-$LightShade-Color: RGBA(229, 225, 236, 1)
-$LightAccent-Color: RGBA(165, 138, 192, 1)
-$Primary-Color: RGBA(100, 73, 153, 1)
-$DarkAccent-Color: RGBA(115, 110, 205, 1)
-$DarkShade-Color: RGBA(32, 20, 41, 1)
+$LightShade-Color: #FFFFFF
+$LightAccent-Color: #8F96CF
+$Primary-Color: #644999
+$DarkAccent-Color: #736ECD 
+$DarkShade-Color: #24172D
 
 $DarkShader: RGBA(42, 42, 42, 1)
-$black : RGBA(33, 33, 33, 1)
+$black : #2d2d2d
 
 @import nav
 @import footer
 
 body
-
-.ND_commissions-main
+.ND_index-banner:before
+    opacity: 0.2
+.ND_index-banner
+    height: auto
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    background-blend-mode: color
+    background-color: rgba(238, 238, 238, 0.81) !important
+    background-image: url("../Img/background.jpg")
+    .banner-container
+        overflow: hidden
+        .banner-container .commission-banner
+            
+        .commission-banner
+            transform: translate(100px,30%)
+            width: 200px
+            height: auto
+            
+.ND_commission-main
     background-color: #fff
-    .commission-header
-        display: flex
+    .commission-intro
         width: 100%
         flex-flow: column wrap
         justify-content: center
         align-items: center
-        #header-title
-            font-size: 10vw
-            font-weight: 700
-            color: $black
-            padding: 75px 0px 0px
-            text-transform: uppercase
-            font-family: $font-primary
-        #header-titlesmall
-            font-size: 4vw
-            font-weight: 500
-            color: $black
-            font-family: $main-text
-        #header-text
-            color: $black
-            font-size: 18px
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: .03em;
-            line-height: 1.5em;
-            text-transform: none;
-            font-family: calibri
-            margin-bottom: 40px
-            padding: 0px 20px
-
-    .commission-box
-        display: flex
-        justify-content: center
-        flex-flow: column wrap
-        padding: 100px 0px
-        margin: 0px
-        list-style: none
-
-        .commission-box-header
-            display: flex
-            flex-flow: column wrap
-            width: 100%
-            margin-bottom: -50px
-            padding: 5px 0px
-            background-color: $DarkShader
-            #box-header-title
-                color: $black
-                padding-top: 5px
-                text-align: center
-                font-size: 32px
-                font-weight: 600
-                letter-spacing: 3px
-                font-family: $font-primary
-                color: $LightShade-Color
-            #box-header-titlebottom
-                color: $black
-                text-align: center
+        padding: 20px 0px 50px
+        overflow: hidden
+        .commission-header
+            text-align: center
+            margin-bottom: 30px
+            #Header-title
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $Primary-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Header-title::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #Header-title::before, #Header-title::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $Primary-Color
+                border-bottom: 4px solid $DarkAccent-Color
+                height: 10px
+                top: 50%
+                margin-top: -3px
+            #Header-title::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #Header-subtitle
+                font-size: 14px
+                letter-spacing: 1.5px
+                color: $LightAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Header-content
                 font-size: 16px
-                letter-spacing: 0.5px
-                font: $font-secondary
-                color: $LightShade-Color
+                font-weight: 500
+                font: $Font-text-1
+                color: $DarkShader
+    .commission-box
+        width: 100%
+        flex-flow: column wrap
+        justify-content: center
+        align-items: center
+        padding: 40px 0px 0px 
+        overflow: hidden
+        .box-header
+            padding: 0px
+            text-align: center
+            #Box-Title
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $DarkAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Box-Title::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #Box-Title::before, #Box-Title::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $DarkAccent-Color
+                border-bottom: 4px solid $LightAccent-Color
+                height: 10px
+                top: 50%
+                margin-top: -3px
+            #Box-Title::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #Box-subtitle
+                font-size: 14px
+                letter-spacing: 1.5px
+                color: $LightAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
         .commission-box-container
             display: flex
             flex-direction: row
             justify-content: center
             border-radius: 20px
-            padding: 100px 50px 10px
+            padding: 0px 50px 10px
             .commission-box-left
                 padding: 10px 0px 20px
                 text-align: left
@@ -93,15 +142,15 @@ body
                     color: $Primary-Color
                     font-size: 20px !important
                     font-weight: 700
-                    font-family: calibri
+                    font-family: $Font-Header-1
                     letter-spacing: 1px
                     padding: 0px 20px 5px 20px
-                    text-transform: uppercase
+                    
                 .box-left-list
                     padding: 0px 20px 10px
                     #box-left-desc
                         color: $black
-                        font: $font-secondary
+                        font: $Font-text-2
                         font-size: 16px
                         letter-spacing: 1px
                         padding: 0px 0px
@@ -113,7 +162,7 @@ body
                         color: $Primary-Color
                         font-size: 11px
                         font-weight: 700
-                        font: $font-secondary
+                        font: $Font-text-2
                         text-decoration: none
                         border-radius: 300px
                         letter-spacing: .2em
@@ -139,3 +188,63 @@ body
                     font-weight: 700
                     align-self: center 
                     text-transform: uppercase
+    .commission-inquiry
+        width: 100%
+        flex-flow: column wrap
+        justify-content: center
+        align-items: center
+        padding: 20px 0px 50px
+        overflow: hidden
+        .inquiry-Header
+            padding: 0px
+            text-align: center
+            #Header-title
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $Primary-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #Header-title::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #Header-title::before, #Header-title::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $Primary-Color
+                border-bottom: 4px solid $DarkAccent-Color
+                height: 10px
+                top: 50%
+                margin-top: -3px
+            #Header-title::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #Header-content
+                font-size: 16px
+                font-weight: 500
+                font: $Font-text-1
+                color: $DarkShader
+            .Header-link
+                padding: 30px 0px
+                #inquiry-link
+                    padding: 13px 26px
+                    color: $Primary-Color
+                    font-size: 11px
+                    font-weight: 700
+                    font: $Font-text-2
+                    text-decoration: none
+                    border-radius: 300px
+                    letter-spacing: .2em
+                    text-transform: uppercase
+                    border: 2px solid $Primary-Color
+                    background-color: transparent
+                #inquiry-link:hover
+                    color: $LightShade-Color
+                    transition: .25s
+                    background-color: rgba(50, 34, 122, 0.85)

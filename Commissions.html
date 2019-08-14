@@ -4,70 +4,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./styles/commissions.css"/>
         <link rel="stylesheet" href="./styles/_nav.sass"/>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- ND header 1 -->
         <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-        
-
+        <!-- ND header 2 -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+        <!-- ND text 1 -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
+        <!-- ND text 2 -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <style>
-           @media all and (min-width: 1100px) {
-                .ND_commissions-main .commission-header{
-                    padding: 25px 20% 100px;
+            @media screen and (min-width: 1000px){
+                .ND_commission-main .commission-intro .commission-header #Header-title {
+                    font-size: 50px;            
                 }
-                .ND_commissions-main .commission-header #header-title{
-                    font-size: 45px;
-                }
-                .ND_commissions-main .commission-header #header-titlesmall{
+                .ND_commission-main .commission-intro .commission-header #Header-subtitle {
                     font-size: 20px;
                 }
-                .ND_commissions-main .commission-box{
-                    padding: 50px 18%;
+                .ND_commission-main .commission-box .box-header #Box-title {
+                    font-size: 40px;            
+                }
+                .ND_commission-main .commission-box .box-header #Box-subtitle {
+                    font-size: 18px;
+                }
+                .ND_commission-main .commission-inquiry .inquiry-Header #Header-title {
+                    font-size: 40px;            
+                }
+                
+            }
+            @media screen and (min-width: 600px){
+                .ND_commission-main .commission-intro .commission-header #Header-title::before {
+                    width: 900px;            
+                }
+                .ND_commission-main .commission-intro .commission-header #Header-title::after {
+                    width: 900px;
+                }
+                .ND_commission-main .commission-box .box-header #Box-title::before {
+                    width: 900px;            
+                }
+                .ND_commission-main .commission-box .box-header #Box-title::after {
+                    width: 900px;
+                }
+                .ND_commission-main .commission-inquiry .inquiry-Header #Header-title::before {
+                    width: 900px;            
+                }
+                .ND_commission-main .commission-inquiry .inquiry-Header #Header-title::after {
+                    width: 900px;
+                }
+            }
+           @media all and (min-width: 1100px) {
+                .ND_commission-main .commission-box{
+                    padding: 50px 20px;
                 }
            }
-           
            @media all and (max-width: 850px){
-               .ND_commissions-main .commission-box .commission-box-container{
+               .ND_commission-main .commission-box .commission-box-container{
                    flex-flow: column wrap;
                    padding: 50px 0px 10px; 
                }
-               .ND_commissions-main .commission-box .commission-box-container .commission-box-left #box-left-title{
+                .ND_commission-main .commission-box .commission-box-container .commission-box-left #box-left-title{
                     text-align: center;
                 }
-                .ND_commissions-main .commission-box .commission-box-container .commission-box-left .box-left-link{
+                .ND_commission-main .commission-box .commission-box-container .commission-box-left .box-left-link{
                     text-align: center;
                 }
-                .ND_commissions-main .commission-box{
+                .ND_commission-main .commission-box{
                     padding: 50px 0px;
                     
                 }
-           }
-           /*-- minimum height required before opening for desktop larger view --*/
-           @media all and (min-width: 700px) {
-                .ND_commissions-main .commission-box .commission-box-header{
-                    border-radius: 20px;
-                    /*clip-path: polygon(90% 0, 95% 50%, 90% 100%, 10% 100%, 5% 50%, 10% 0);*/
-                }
-                
-           }
-
-           @media all and (max-width: 700px) {
-               .ND_commissions-main .commission-box .commission-box-container .commission-box-left{
+           }/*
+            @media all and (max-width: 700px) {
+               .ND_commission-main .commission-box .commission-box-container .commission-box-left{
                     height: auto;
                     min-width: 320px;
                 }
-                .ND_commissions-main .commission-box .commission-box-container .commission-box-right{
+                .ND_commission-main .commission-box .commission-box-container .commission-box-right{
                     min-width: 320px;
                     height: auto;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
                 }
-            }
+            }*/
         </style>
     </head>
     <body>
@@ -86,20 +108,25 @@
                     </ul>
                 </div>
             </nav>
+            <article class="banner-container">
+                <img class="commission-banner" src="./Img/dumpling.webp">
+            </article>
         </header>
 
-        <main class="ND_commissions-main">
+        <main class="ND_commission-main">
 
-            <article class="commission-header">
-                <h3 id="header-title">Commissions</h3>
-                <h6 id="header-titlesmall">Commissions currently <span style="font-family: courgette;">OPEN</span></h6>
-                <p id="header-text">Below are the current custom Twitch services I am offering. More services may be added as they become available. Please read below for ordering information. If you are ready to commission me, please fill out the inquiry form at the bottom of this page.</p>
+            <article class="commission-intro container">
+                <header class="Commission-header container">
+                    <h3 id="Header-Title">Commission Info</h3>
+                    <h3 id="Header-Subtitle">Commissions currently<span style="color: #222;"> OPEN</span></h3>
+                    <p  id="Header-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </header>
             </article>
 
-            <article class="commission-box">
-                <header class="commission-box-header">
-                    <h4 id="box-header-title">Title of Package</h4>
-                    <h6 id="box-header-titlebottom">Price and description of Emotes</h6>
+            <article class="commission-box container">
+                <header class="box-header container">
+                    <h3 id="Box-Title">Package Title</h3>
+                    <h3 id="Box-Subtitle">Price and description of Emotes</h3>
                 </header>
                 <div class="commission-box-container">
                     <section class="commission-box-left">  
@@ -109,63 +136,64 @@
                             <p id="box-left-desc">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <p id="box-left-desc">- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
-                        <div class="box-left-link">
-                            <a id="box-left-linkbutton" href="#"><span style="text-transform: uppercase;">View More</span></a>
-                        </div>
                     </section>
                     <section class="commission-box-right">
-                        <img id="box-right-img" src="./Img/dumpling.webp" alt="">
+                        <img id="box-right-img" src="http://placehold.it/400x400" alt="">
                         <h2 id="box-right-price">$<span style="font-family: courgette;">10</span></h2>
                     </section>
                 </div>
             </article>
 
-            <article class="commission-box">
-                <header class="commission-box-header">
-                    <h4 id="box-header-title">Title of Package</h4>
-                    <h6 id="box-header-titlebottom">Price and description of Chibis</h6>
+            <article class="commission-box container">
+                <header class="box-header container">
+                    <h3 id="Box-Title">Package Title</h3>
+                    <h3 id="Box-Subtitle">Price and description of Emotes</h3>
                 </header>
                 <div class="commission-box-container">
                     <section class="commission-box-left">  
-                        <h4 id="box-left-title">What to expect....</h4>  
-                        <ul class="box-left-list">                    
-                            <p id="box-left-desc">- Description of item and what this package comes with. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p id="box-left-desc">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p id="box-left-desc">- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </ul>
-                        <div class="box-left-link">
-                            <a id="box-left-linkbutton" href="#"><span style="text-transform: uppercase;">View More</span></a>
+                        <h4 id="box-left-title">What to expect...</h4>  
+                        <div class="box-left-list">                    
+                            <p id="box-left-desc">- Description of item and what this package comes with. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                            <p id="box-left-desc">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p id="box-left-desc">- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </section>
                     <section class="commission-box-right">
-                        <img id="box-right-img" src="./Img/Neko-sketch.jpg" alt="">
+                        <img id="box-right-img" src="http://placehold.it/400x400" alt="">
+                        <h2 id="box-right-price">$<span style="font-family: courgette;">15</span></h2>
+                    </section>
+                </div>
+            </article>
+
+            <article class="commission-box container">
+                <header class="box-header container">
+                    <h3 id="Box-Title">Package Title</h3>
+                    <h3 id="Box-Subtitle">Price and description of Emotes</h3>
+                </header>
+                <div class="commission-box-container">
+                    <section class="commission-box-left">  
+                        <h4 id="box-left-title">What to expect...</h4>  
+                        <div class="box-left-list">                    
+                            <p id="box-left-desc">- Description of item and what this package comes with. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                            <p id="box-left-desc">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p id="box-left-desc">- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </section>
+                    <section class="commission-box-right">
+                        <img id="box-right-img" src="http://placehold.it/400x400" alt="">
                         <h2 id="box-right-price">$<span style="font-family: courgette;">25</span></h2>
                     </section>
                 </div>
             </article>
 
-            <article class="commission-box">
-                <header class="commission-box-header">
-                    <h4 id="box-header-title">Title of Package</h4>
-                    <h6 id="box-header-titlebottom">Price and description of Art</h6>
+            <article class="commission-inquiry container">
+                <header class="inquiry-Header container">
+                    <h3 id="Header-title">Inquiry Form</h3>
+                    <p  id="Header-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="Header-link">
+                        <a  id="inquiry-link" href="">Inquiry Now</a>
+                    </div>
                 </header>
-                <div class="commission-box-container">
-                    <section class="commission-box-left">  
-                        <h4 id="box-left-title">What to expect...</h4>  
-                        <ul class="box-left-list">                    
-                            <p id="box-left-desc">- Description of item and what this package comes with. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
-                            <p id="box-left-desc">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p id="box-left-desc">- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </ul>
-                        <div class="box-left-link">
-                            <a id="box-left-linkbutton" href="#"><span style="text-transform: uppercase;">View More</span></a>
-                        </div>
-                    </section>
-                    <section class="commission-box-right">
-                        <img id="box-right-img" src="./Img/ND_banner.jpg" alt="">
-                        <h2 id="box-right-price">$<span style="font-family: courgette;">50</span></h2>
-                    </section>
-                </div>
             </article>
 
         </main>
