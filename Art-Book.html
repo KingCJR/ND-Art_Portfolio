@@ -8,15 +8,50 @@
 
         <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
         
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
         <style>
-            
+            /*-- Media screen for Large sized screens EX. Desktop --*/
+            @media screen and (min-width: 1000px) {
+                .ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell {
+                    width: calc(25% - 2rem);
+                }
+                .ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell {
+                    width: calc(25% - 2rem);
+                }
+                .ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell {
+                    width: calc(25% - 2rem);
+                }
+                .ND_ArtBook-main .Artbook_First_Section .Section-header h4{
+                    font-size: 6vw;
+                }
+            }
+            /*-- Media screen for Medium sized screens EX. tablets --*/
+            @media screen and (min-width: 600px) {
+                .ND_ArtBook-main .Artbook_First_Section .Section-header h4{
+                    font-size: 3vw;
+                }
+                .ND_ArtBook-main .Artbook_Second_Section .Section-header h4{
+                    font-size: 3vw;
+                }
+                .ND_ArtBook-main .Artbook_Third_Section .Section-header h4{
+                    font-size: 3vw;
+                }
+                .grid-cell {
+                    width: calc(33.333% - 2rem);
+                }
+            }
+            @media screen and (max-width: 500px){
+              .ND_ArtBook-main .Artbook_First_Section .Section-header h4{
+                    font-size: 12vw;
+                }
+            }
         </style>
     </head>
+
     <body>
         <header class="ND_index-banner">
             <nav class="navbar navbar-expand-sm">
@@ -35,7 +70,115 @@
             </nav>
         </header>
 
-        <main class="ND_">
+        <main class="ND_ArtBook-main">
+            <article class="Artbook_main-header">
+                <h2 id="header-title">My Art Collection</h2>
+            </article>
+        <!-- First Art Gallery -->
+            <article class="Artbook_First_Section">
+                <header class="Section-header">
+                    <h4>Emotes</h4>
+                    <h6>Collection of personal/fanmade emotes</h6>
+                </header>
+                <section class="Section_Gallery">
+                    <div class="Gallery-grid">
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" src="http://placehold.it/400x400"/>
+                        </div>
+                    </div>    
+                </section>
+            </article>
+        <!-- Second Art Gallery -->
+            <article class="Artbook_Second_Section">
+                    <header class="Section-header">
+                        <h4>Banner</h4>
+                        <h6>Collection of personal/fanmade emotes</h6>
+                    </header>
+                    <section class="Section_Gallery">
+                        <div class="Gallery-grid">
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                        </div>    
+                    </section>
+                </article>
+            <!-- Third Art Gallery -->
+                <article class="Artbook_Second_Section">
+                    <header class="Section-header">
+                        <h4>Banner</h4>
+                        <h6>Collection of personal/fanmade emotes</h6>
+                    </header>
+                    <section class="Section_Gallery">
+                        <div class="Gallery-grid">
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                            <div class="grid-cell">
+                                <img class="cell-image" src="http://placehold.it/400x400"/>
+                            </div>
+                        </div>    
+                    </section>
+                </article>
 
         </main>
 

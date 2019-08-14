@@ -14,3 +14,55 @@ $black : RGBA(33, 33, 33, 1)
 
 @import nav
 @import footer
+h4,h6
+    color: $DarkShader
+body
+.ND_ArtBook-main
+    .Artbook_main-header
+        position: relative
+        text-align: center
+
+        height: 40vw
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        background-attachment: fixed
+        background-image: url("../Img/background.jpg")
+        #header-title
+            color: $Primary-Color
+            font-family: $font-primary
+            font-size: 42px
+            font-weight: 900
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+    .Artbook_First_Section,
+    .Artbook_Second_Section, 
+    .Artbook_Third_Section
+        margin: 0 auto
+        max-width: 1200px
+        padding: 5rem 1rem
+        .Section-header
+            padding: 1rem 0
+            text-align: center
+            h4
+                font: $font-secondary
+                font-weight: 600
+            h6
+                font: $font-secondary
+                font-weight: 400
+        .Section_Gallery
+            .Gallery-grid
+                display: flex
+                flex-wrap: wrap
+                flex-direction: row
+                .grid-cell
+                    margin: 1rem
+                    .grid-cell img
+                        display: block
+                    .cell-image
+                        max-width: 100%
+            
+        

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: RGBA(32, 20, 41, 1);
+  background-color: RGBA(42, 42, 42, 1);
   text-decoration: none;
 }
 
@@ -28,10 +28,11 @@
 
 .navbar .navbar-nav .nav-item {
   color: #E4E2E2;
+  font-family: lato;
 }
 
 .navbar .navbar-nav .nav-item:hover {
-  background: #303030;
+  background-color: green;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -72,5 +73,93 @@
   padding: 10px;
   color: RGBA(229, 225, 236, 1);
   font: Open Sans, san-serif;
+}
+
+h4, h6 {
+  color: RGBA(42, 42, 42, 1);
+}
+
+.ND_ArtBook-main .Artbook_main-header {
+  position: relative;
+  text-align: center;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../Img/background.jpg");
+}
+
+.ND_ArtBook-main .Artbook_main-header #header-title {
+  color: RGBA(100, 73, 153, 1);
+  font-family: courgette;
+  font-size: 42px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ND_ArtBook-main .Artbook_First_Section,
+.ND_ArtBook-main .Artbook_Second_Section,
+.ND_ArtBook-main .Artbook_Third_Section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 5rem 1rem;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section-header,
+.ND_ArtBook-main .Artbook_Second_Section .Section-header,
+.ND_ArtBook-main .Artbook_Third_Section .Section-header {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section-header h4,
+.ND_ArtBook-main .Artbook_Second_Section .Section-header h4,
+.ND_ArtBook-main .Artbook_Third_Section .Section-header h4 {
+  font: roboto;
+  font-weight: 600;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section-header h6,
+.ND_ArtBook-main .Artbook_Second_Section .Section-header h6,
+.ND_ArtBook-main .Artbook_Third_Section .Section-header h6 {
+  font: roboto;
+  font-weight: 400;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid,
+.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid,
+.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell,
+.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell,
+.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell {
+  margin: 1rem;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img,
+.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img,
+.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img {
+  display: block;
+}
+
+.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image,
+.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image,
+.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image {
+  max-width: 100%;
 }
 /*# sourceMappingURL=artbook.css.map */
