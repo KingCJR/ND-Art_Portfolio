@@ -15,25 +15,79 @@ $black : #2d2d2d
 @import nav
 @import footer
 
-h4,h6
-    color: $DarkShader
+
 body
-.ND_ArtBook-main
-    .Artbook_main-header
-        text-align: center
-        height: 30vw
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center
-        background-attachment: fixed
-        background-image: url("../Img/background.jpg")
-        #header-title
-            color: $Primary-Color
-            font-family: $Font-Header-2
-            font-size: 42px
-            font-weight: 900
-            position: absolute
-            padding-top: 30px
+.ND_index-banner:before
+    opacity: 0.2
+.ND_index-banner
+    height: auto
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    background-blend-mode: color
+    background-color: rgba(238, 238, 238, 0.81) !important
+    background-image: url("../Img/background.jpg")
+    .artbook-container
+        overflow: hidden
+        .artbook-container .artbook-banner
+            
+        .artbook-banner
+            transform: translate(100px,30%)
+            width: 200px
+            height: auto
+
+.ND_Artbook-main  
+    background-color: #fff
+    .Artbook-intro
+        width: 100%
+        flex-flow: column wrap
+        justify-content: center
+        align-items: center
+        padding: 20px 0px 50px
+        overflow: hidden
+        .intro-container
+            text-align: center
+            margin-bottom: 30px
+            #intro-title
+                margin: 0px
+                display: inline-block
+                position: relative
+                font-size: 28px
+                font-weight: 400
+                color: $Primary-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #intro-title::after
+                left: 100%
+                margin-left: 10px
+                padding-right: 10px
+            #intro-title::before, #intro-title::after
+                position: absolute
+                content: ""
+                display: block
+                width: 100%
+                border-top: 4px solid $Primary-Color
+                border-bottom: 3px solid $DarkAccent-Color
+                height: 12px
+                top: 50%
+                margin-top: -3px
+            #intro-title::before
+                right: 100%
+                margin-right: 10px
+                padding-left: 10px
+            #intro-subtitle
+                margin-bottom: 20px
+                font-size: 14px
+                letter-spacing: 1.5px
+                color: $LightAccent-Color
+                text-transform: uppercase
+                font-family: $Font-Header-2
+            #intro-content
+                font-size: 16px
+                font-weight: 600
+                font: $Font-text-2
+                color: $black
     .Artbook_First_Section,
     .Artbook_Second_Section, 
     .Artbook_Third_Section

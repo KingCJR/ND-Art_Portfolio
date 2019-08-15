@@ -89,61 +89,140 @@
   font: Open Sans;
 }
 
-h4, h6 {
-  color: RGBA(42, 42, 42, 1);
+.ND_index-banner:before {
+  opacity: 0.2;
 }
 
-.ND_ArtBook-main .Artbook_main-header {
-  text-align: center;
-  height: 30vw;
+.ND_index-banner {
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-blend-mode: color;
+  background-color: rgba(238, 238, 238, 0.81) !important;
   background-image: url("../Img/background.jpg");
 }
 
-.ND_ArtBook-main .Artbook_main-header #header-title {
-  color: #644999;
-  font-family: oswald;
-  font-size: 42px;
-  font-weight: 900;
-  position: absolute;
-  padding-top: 30px;
+.ND_index-banner .artbook-container {
+  overflow: hidden;
 }
 
-.ND_ArtBook-main .Artbook_First_Section,
-.ND_ArtBook-main .Artbook_Second_Section,
-.ND_ArtBook-main .Artbook_Third_Section {
+.ND_index-banner .artbook-container .artbook-banner {
+  -webkit-transform: translate(100px, 30%);
+          transform: translate(100px, 30%);
+  width: 200px;
+  height: auto;
+}
+
+.ND_Artbook-main {
+  background-color: #fff;
+}
+
+.ND_Artbook-main .Artbook-intro {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px 50px;
+  overflow: hidden;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container #intro-title {
+  margin: 0px;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  font-weight: 400;
+  color: #644999;
+  text-transform: uppercase;
+  font-family: oswald;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container #intro-title::after {
+  left: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container #intro-title::before, .ND_Artbook-main .Artbook-intro .intro-container #intro-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 4px solid #644999;
+  border-bottom: 3px solid #736ECD;
+  height: 12px;
+  top: 50%;
+  margin-top: -3px;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container #intro-title::before {
+  right: 100%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container #intro-subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #8F96CF;
+  text-transform: uppercase;
+  font-family: oswald;
+}
+
+.ND_Artbook-main .Artbook-intro .intro-container #intro-content {
+  font-size: 16px;
+  font-weight: 600;
+  font: Open Sans;
+  color: #2d2d2d;
+}
+
+.ND_Artbook-main .Artbook_First_Section,
+.ND_Artbook-main .Artbook_Second_Section,
+.ND_Artbook-main .Artbook_Third_Section {
   margin: 0 auto;
   max-width: 1200px;
   padding: 5rem 1rem;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section-header,
-.ND_ArtBook-main .Artbook_Second_Section .Section-header,
-.ND_ArtBook-main .Artbook_Third_Section .Section-header {
+.ND_Artbook-main .Artbook_First_Section .Section-header,
+.ND_Artbook-main .Artbook_Second_Section .Section-header,
+.ND_Artbook-main .Artbook_Third_Section .Section-header {
   padding: 1rem 0;
   text-align: center;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section-header h4,
-.ND_ArtBook-main .Artbook_Second_Section .Section-header h4,
-.ND_ArtBook-main .Artbook_Third_Section .Section-header h4 {
+.ND_Artbook-main .Artbook_First_Section .Section-header h4,
+.ND_Artbook-main .Artbook_Second_Section .Section-header h4,
+.ND_Artbook-main .Artbook_Third_Section .Section-header h4 {
   font: Open Sans;
   font-weight: 600;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section-header h6,
-.ND_ArtBook-main .Artbook_Second_Section .Section-header h6,
-.ND_ArtBook-main .Artbook_Third_Section .Section-header h6 {
+.ND_Artbook-main .Artbook_First_Section .Section-header h6,
+.ND_Artbook-main .Artbook_Second_Section .Section-header h6,
+.ND_Artbook-main .Artbook_Third_Section .Section-header h6 {
   font: Open Sans;
   font-weight: 400;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid,
-.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid,
-.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid {
+.ND_Artbook-main .Artbook_First_Section .Section_Gallery .Gallery-grid,
+.ND_Artbook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid,
+.ND_Artbook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,21 +234,21 @@ h4, h6 {
           flex-direction: row;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell,
-.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell,
-.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell {
+.ND_Artbook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell,
+.ND_Artbook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell,
+.ND_Artbook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell {
   margin: 1rem;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img,
-.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img,
-.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img {
+.ND_Artbook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img,
+.ND_Artbook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img,
+.ND_Artbook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell .grid-cell img {
   display: block;
 }
 
-.ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image,
-.ND_ArtBook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image,
-.ND_ArtBook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image {
+.ND_Artbook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image,
+.ND_Artbook-main .Artbook_Second_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image,
+.ND_Artbook-main .Artbook_Third_Section .Section_Gallery .Gallery-grid .grid-cell .cell-image {
   max-width: 100%;
 }
 /*# sourceMappingURL=artbook.css.map */

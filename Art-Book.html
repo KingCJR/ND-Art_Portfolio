@@ -21,6 +21,12 @@
         <style>
             /*-- Media screen for Large sized screens EX. Desktop --*/
             @media screen and (min-width: 1000px) {
+                .ND_Artbook-main .Artbook-intro .intro-container #intro-title{
+                    font-size: 50px;            
+                }
+                .ND_Artbook-main .Artbook-intro .intro-container #intro-subtitle {
+                    font-size: 20px;
+                }
                 .ND_ArtBook-main .Artbook_First_Section .Section_Gallery .Gallery-grid .grid-cell {
                     width: calc(25% - 2rem);
                 }
@@ -36,6 +42,12 @@
             }
             /*-- Media screen for Medium sized screens EX. tablets --*/
             @media screen and (min-width: 600px) {
+                .ND_ArtBook-main .Artbook-intro .intro-container #intro-title::before{
+                    width: 900px;            
+                }
+                .ND_ArtBook-main .Artbook-intro .intro-container #intro-title::after {
+                    width: 900px;
+                }
                 .ND_ArtBook-main .Artbook_First_Section .Section-header h4{
                     font-size: 3vw;
                 }
@@ -73,13 +85,20 @@
                     </ul>
                 </div>
             </nav>
-        </header>
-
-        <main class="ND_ArtBook-main">
-            <article class="Artbook_main-header">
-                <h2 id="header-title">My Art Collection</h2>
+            <article class="artbook-container">
+                <img class="artbook-banner" src="./Img/dumpling.webp">
             </article>
-        <!-- First Art Gallery -->
+        </header>
+        <main class="ND_Artbook-main">
+            <!-- Artbook Intro -->
+            <article class="Artbook-intro container">
+                <header class="intro-container container">
+                    <h3 id="intro-title">Art Work</h3>
+                    <h6 id="intro-subtitle">Commission Items</h6>
+                    <p  id="intro-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </header>
+            </article>
+            <!-- First Art Gallery -->
             <article class="Artbook_First_Section">
                 <header class="Section-header">
                     <h4>Art Section 1</h4>
@@ -116,74 +135,74 @@
             </article>
         <!-- Second Art Gallery -->
             <article class="Artbook_Second_Section">
-                    <header class="Section-header">
-                        <h4>Art Section 2</h4>
-                        <h6>Description of personal/fanmade art collection</h6>
-                    </header>
-                    <section class="Section_Gallery">
-                        <div class="Gallery-grid">
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                        </div>    
-                    </section>
-                </article>
+                <header class="Section-header">
+                    <h4>Art Section 2</h4>
+                    <h6>Description of personal/fanmade art collection</h6>
+                </header>
+                <section class="Section_Gallery">
+                    <div class="Gallery-grid">
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                    </div>    
+                </section>
+            </article>
             <!-- Third Art Gallery -->
-                <article class="Artbook_Second_Section">
-                    <header class="Section-header">
-                        <h4>Art Section 3</h4>
-                        <h6>Description of personal/fanmade art collection</h6>
-                    </header>
-                    <section class="Section_Gallery">
-                        <div class="Gallery-grid">
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                            <div class="grid-cell">
-                                <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
-                            </div>
-                        </div>    
-                    </section>
-                </article>
+            <article class="Artbook_Second_Section">
+                <header class="Section-header">
+                    <h4>Art Section 3</h4>
+                    <h6>Description of personal/fanmade art collection</h6>
+                </header>
+                <section class="Section_Gallery">
+                    <div class="Gallery-grid">
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                        <div class="grid-cell">
+                            <img class="cell-image" alt="img" src="http://placehold.it/400x400"/>
+                        </div>
+                    </div>    
+                </section>
+            </article>
 
         </main>
 
