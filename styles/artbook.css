@@ -94,9 +94,8 @@ h4, h6 {
 }
 
 .ND_ArtBook-main .Artbook_main-header {
-  position: relative;
   text-align: center;
-  height: 40vw;
+  height: 30vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -110,10 +109,7 @@ h4, h6 {
   font-size: 42px;
   font-weight: 900;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  padding-top: 30px;
 }
 
 .ND_ArtBook-main .Artbook_First_Section,
